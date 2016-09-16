@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApplication3.Interfaces;
 
 namespace ConsoleApplication3.View
 {
-    class DisciplinaView
+    class DisciplinaView : IImpressao
     {
         Disciplina disciplina;
 
@@ -30,6 +31,9 @@ namespace ConsoleApplication3.View
            
             return disciplina;
         }
+        public void Imprimir()
+        {
 
+        }
     }
 }

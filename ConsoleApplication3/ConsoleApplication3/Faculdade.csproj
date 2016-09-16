@@ -75,6 +75,7 @@
     <Compile Include="Controller\DisciplinaController.cs" />
     <Compile Include="Controller\PeriodoController.cs" />
     <Compile Include="DAO\FaculdadeDAO.cs" />
+    <Compile Include="Interfaces\IImpressao.cs" />
     <Compile Include="Model\Curso.cs" />
     <Compile Include="Model\Disciplina.cs" />
     <Compile Include="Model\Faculdade.cs" />

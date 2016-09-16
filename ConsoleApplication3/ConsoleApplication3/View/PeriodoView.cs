@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApplication3.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication3.View
 {
-    class PeriodoView
+    class PeriodoView: IImpressao
     {
         Periodo periodo;
+
+      
 
         //################### PEGAR DADOS TELA #########################################
 
@@ -19,6 +22,9 @@ namespace ConsoleApplication3.View
             periodo.NumeroIdentificacao = Convert.ToInt16(Console.ReadLine());
             return periodo;
         }
-
+        public void Imprimir()
+        {
+                 
+       }
     }
 }
