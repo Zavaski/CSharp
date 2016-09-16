@@ -1,4 +1,5 @@
 ﻿using ConsoleApplication3.View;
+using ConsoleApplication3.Dao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,41 @@ namespace ConsoleApplication3.Controller
 {
     class DisciplinaController
     {
-        Disciplina disciplina;
+
+   
+
+        //################### SINGLETON #########################################
+        private static DisciplinaController instance;
+        private DisciplinaController() { }
+        public static DisciplinaController Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new DisciplinaController();
+                }
+                return instance;
+            }
+        }
+        //################### CADASTRO #########################################
 
         public void cadastrarNovaDisciplina()
         {
-            //Console.Write("Selecione o período que deseja cadastrar a disciplina");
+            
             DisciplinaView disciplinaView = new DisciplinaView();
-            disciplina = disciplinaView.pegarInformacoesConsole();
+            Console.Write("Informe o curso que deseja cadastrar a disciplina");
+            String nomeCurso = Console.ReadLine();
+            Curso curso = CursoController.Instance.buscarCursoPorNome(nomeCurso); 
 
+            Console.Write("Informe o periodo que deseja cadastrar a disciplina");
+            int numeroPeriodo = Convert.ToInt16(Console.ReadLine());
+            Periodo periodo = PeriodoController.Instance.buscarPeriodoPorNumero(curso, numeroPeriodo);
+            Disciplina disciplina = new Disciplina();
+            disciplina = disciplinaView.pegarInformacoesConsole();
+            FaculdadeDAO.Instance.salvarDisciplina();
+
+            Console.Write("Disciplina cadastrada com sucesso! \n");
        
         }
     }

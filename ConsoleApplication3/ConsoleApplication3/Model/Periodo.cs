@@ -8,6 +8,8 @@ namespace ConsoleApplication3
 {
     class Periodo
     {
+
+
         private int numeroIdentificacao { get; set; }
         private int numeroAulasTeoricasPeriodo { get; set; }
         private int numeroAulasPraticasPeriodo { get; set; }
@@ -16,12 +18,14 @@ namespace ConsoleApplication3
         private int totalHorasRelogioPeriodo { get; set; }
         private List<Disciplina> disciplinas { get; set; }
 
+        //################### CONSTRUCT #########################################
         public Periodo()
         {
             disciplinas = new List<Disciplina>();
            // this.calcularTotaisPeriodo();
         }
 
+        //################### GET - SET #########################################
         public List<Disciplina> Disciplinas
         {
             get { return disciplinas; }

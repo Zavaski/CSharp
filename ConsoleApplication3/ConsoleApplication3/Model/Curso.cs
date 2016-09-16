@@ -18,6 +18,8 @@ namespace ConsoleApplication3
         private int totalHorasRelogioCurso { get; set; }
         private int numeroPeriodos;
 
+
+        //################### CONSTRUCT #########################################
         public Curso()
         {
             periodos = new List<Periodo>();
@@ -25,7 +27,8 @@ namespace ConsoleApplication3
          //   this.criarPeriodos();
         }
 
-     
+        //################### GET - SET #########################################
+
         public int NumeroPeriodos
         {
             get { return numeroPeriodos; }

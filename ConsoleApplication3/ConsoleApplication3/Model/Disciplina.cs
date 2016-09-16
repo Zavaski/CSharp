@@ -17,10 +17,13 @@ namespace ConsoleApplication3
         private int totalHorasRelogio { get; set; }
         private List<Disciplina> disciplinasRequisitos { get; set; }
 
+        //################### CONSTRUCT #########################################
         public Disciplina()
         {
             disciplinasRequisitos = new List<Disciplina>();
         }
+
+        //################### GET - SET #########################################
 
         public int Id
         {
