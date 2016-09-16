@@ -8,8 +8,6 @@ namespace ConsoleApplication3
 {
     class Periodo
     {
-
-
         private int numeroIdentificacao { get; set; }
         private int numeroAulasTeoricasPeriodo { get; set; }
         private int numeroAulasPraticasPeriodo { get; set; }

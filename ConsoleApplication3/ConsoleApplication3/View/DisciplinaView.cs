@@ -9,6 +9,8 @@ namespace ConsoleApplication3.View
     class DisciplinaView
     {
         Disciplina disciplina;
+
+        //################### PEGAR DADOS TELA #########################################
         public Disciplina pegarInformacoesConsole()
         {
             disciplina = new Disciplina();

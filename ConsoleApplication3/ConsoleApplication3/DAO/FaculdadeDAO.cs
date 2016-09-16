@@ -34,15 +34,15 @@ namespace ConsoleApplication3.Dao
       
         }
         //################### SALVAR PERIODO #########################################
-        public void salvarPeriodo()
+        public void salvarPeriodo(Curso curso, Periodo periodo)
         {
-
+            curso.Periodos.Add(periodo);
         }
 
         //################### SALVAR DISCIPLINA ######################################
-        public void salvarDisciplina()
+        public void salvarDisciplina(Curso curso, Periodo periodo, Disciplina disciplina)
         {
-
+            periodo.Disciplinas.Add(disciplina);
         }
 
 

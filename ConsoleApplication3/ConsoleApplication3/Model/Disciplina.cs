@@ -31,7 +31,6 @@ namespace ConsoleApplication3
    
         }
 
-
         public int NumeroTotalAulasTeoricas
         {
             get { return numeroAulasTeoricas; }

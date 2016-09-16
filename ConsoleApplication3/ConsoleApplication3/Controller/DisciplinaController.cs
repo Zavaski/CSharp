@@ -11,8 +11,6 @@ namespace ConsoleApplication3.Controller
     class DisciplinaController
     {
 
-   
-
         //################### SINGLETON #########################################
         private static DisciplinaController instance;
         private DisciplinaController() { }
@@ -39,11 +37,12 @@ namespace ConsoleApplication3.Controller
 
             Console.Write("Informe o periodo que deseja cadastrar a disciplina");
             int numeroPeriodo = Convert.ToInt16(Console.ReadLine());
+
             Periodo periodo = PeriodoController.Instance.buscarPeriodoPorNumero(curso, numeroPeriodo);
             Disciplina disciplina = new Disciplina();
-            disciplina = disciplinaView.pegarInformacoesConsole();
-            FaculdadeDAO.Instance.salvarDisciplina();
 
+            disciplina = disciplinaView.pegarInformacoesConsole();
+            FaculdadeDAO.Instance.salvarDisciplina(curso, periodo, disciplina);
             Console.Write("Disciplina cadastrada com sucesso! \n");
        
         }

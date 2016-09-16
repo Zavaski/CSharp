@@ -10,6 +10,8 @@ namespace ConsoleApplication3.View
     {
         Periodo periodo;
 
+        //################### PEGAR DADOS TELA #########################################
+
         public Periodo pegarInformacoesConsole()
         {
             periodo = new Periodo();

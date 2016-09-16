@@ -1,4 +1,5 @@
 ﻿using ConsoleApplication3.Dao;
+using ConsoleApplication3.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,21 @@ namespace ConsoleApplication3.Controller
                 return instance;
             }
         }
+        //################### CADASTRO #########################################
+        public void cadastrarPeriodo()
+        {
+             PeriodoView periodoView = new PeriodoView();
+             Console.Write("Informe o Curso que deseja cadastrar o periodo \n");
+             string nomeCurso = Console.ReadLine();
+             Curso curso = CursoController.Instance.buscarCursoPorNome(nomeCurso);
+
+             Periodo periodo = periodoView.pegarInformacoesConsole();
+               
+             FaculdadeDAO.Instance.salvarPeriodo(curso, periodo);
+
+        }
+       
+
         //################### INSTANCIAR PERIODOS #########################################
 
         public void instanciarPeriodos(Curso curso)

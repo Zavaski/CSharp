@@ -8,10 +8,11 @@ namespace ConsoleApplication3.View
 {
     class CursoView
     {
-       
+        Curso curso;
+        //################### PEGAR DADOS TELA #########################################
         public Curso pegarInformacoesConsole()
         {
-            Curso curso;
+           
             curso = new Curso();
             Console.Write("Informe o nome do curso \n");
             curso.Nome = Console.ReadLine();
