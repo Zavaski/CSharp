@@ -4,9 +4,3 @@ C:\Users\Zavaski\Desktop\ConsoleApplication3\ConsoleApplication3\bin\Debug\Conso
 C:\Users\Zavaski\Desktop\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
 C:\Users\Zavaski\Desktop\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
 C:\Users\Zavaski\Desktop\ConsoleApplication3\ConsoleApplication3\obj\Debug\Faculdade.csprojResolveAssemblyReference.cache
-C:\Users\Zavaski\Documents\GitHub\CSharp\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
-C:\Users\Zavaski\Documents\GitHub\CSharp\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
-C:\Users\Zavaski\Documents\GitHub\CSharp\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
-C:\Users\Zavaski\Documents\GitHub\CSharp\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
-C:\Users\Zavaski\Documents\GitHub\CSharp\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
-C:\Users\Zavaski\Documents\GitHub\CSharp\ConsoleApplication3\ConsoleApplication3\obj\Debug\Faculdade.csprojResolveAssemblyReference.cache

@@ -12,7 +12,8 @@ namespace ConsoleApplication3.View
         public Disciplina pegarInformacoesConsole()
         {
             disciplina = new Disciplina();
-            Console.WriteLine("Informe o nome da disciplina \n");
+
+            Console.Write("Informe o nome da disciplina \n");
             disciplina.Nome = Console.ReadLine();
             Console.Write("Informe o numero de Aulas Praticas da disciplina \n");
             disciplina.NumeroAulasPraticas = Convert.ToInt16(Console.ReadLine());
@@ -24,6 +25,7 @@ namespace ConsoleApplication3.View
             disciplina.TotalHorasAulas = Convert.ToInt16(Console.ReadLine());
             Console.Write("Informe o total de Horas Relogio \n");
             disciplina.TotalHorasRelogio = Convert.ToInt16(Console.ReadLine());
+           
             return disciplina;
         }
 
